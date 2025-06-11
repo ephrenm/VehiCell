@@ -2,4 +2,4 @@
 
 **Current Task:** Component Selection
 
-Check back later for more!
+Check out the current revision schematic or come back later for more!
