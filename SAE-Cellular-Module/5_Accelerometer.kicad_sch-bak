@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b05b0761-2a98-4cf9-8f23-a4d07fe0674c")
+	(paper "A4")
+	(lib_symbols)
+	(text "bmi270, already download libraries\n"
+		(exclude_from_sim no)
+		(at 125.73 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e5368afd-76bf-4ca9-af5f-35f24c1982ae")
+	)
+)
