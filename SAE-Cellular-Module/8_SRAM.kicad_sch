@@ -1147,75 +1147,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 124.46 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "206eb611-9d64-4157-bab1-d924efe75d14")
-		(property "Reference" "C37"
-			(at 128.016 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 128.016 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.4252 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 124.46 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f310cc18-2afa-4f03-89f4-f2ecd8dc6dcc")
-		)
-		(pin "2"
-			(uuid "e864df6e-bc99-4d92-bd25-a8cdd8134c89")
-		)
-		(instances
-			(project ""
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e38f8bc0-67b3-4584-95c9-b56f13e21511"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 152.4 113.03 270)
 		(unit 1)
@@ -1244,7 +1175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 118.11 0)
 			(effects
 				(font
@@ -1400,6 +1331,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "23K256T-I/ST"
+			(at 147.32 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0e19c73c-65f5-43f8-a8a6-27b5175f0b6b")
 		)
@@ -1462,7 +1402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 115.57 0)
 			(effects
 				(font
@@ -1530,7 +1470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 113.03 0)
 			(effects
 				(font
@@ -1598,7 +1538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 107.95 0)
 			(effects
 				(font
@@ -1666,7 +1606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 152.4 110.49 0)
 			(effects
 				(font
@@ -1700,6 +1640,84 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e38f8bc0-67b3-4584-95c9-b56f13e21511"
 					(reference "TP49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e60c4f26-dee6-4618-97c1-de4962814fa0")
+		(property "Reference" "C37"
+			(at 124.968 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 124.968 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 125.4252 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 124.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 124.46 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d30ec72c-72bb-4dbc-b0c9-7d637010cb2a")
+		)
+		(pin "1"
+			(uuid "f33d4361-7c49-4fd9-86d1-468f388b951a")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e38f8bc0-67b3-4584-95c9-b56f13e21511"
+					(reference "C37")
 					(unit 1)
 				)
 			)

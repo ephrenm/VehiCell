@@ -1074,12 +1074,6 @@
 		(uuid "1669e4f5-294b-4f7a-aa8e-a69c398dd2ec")
 	)
 	(junction
-		(at 160.02 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1bdd67ff-72ac-4bba-9fdf-1bfdbc58c707")
-	)
-	(junction
 		(at 124.46 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1098,6 +1092,12 @@
 		(uuid "3e7c8cf3-b3aa-4883-93ae-64502e72daf7")
 	)
 	(junction
+		(at 160.02 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c385d9f-062f-422b-8475-33b17146b6e4")
+	)
+	(junction
 		(at 132.08 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1114,12 +1114,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8115cd10-1087-4fb7-ad6d-d078ea230722")
-	)
-	(junction
-		(at 149.86 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "889b34cb-6168-4ec5-8f7d-f2a98fb2309b")
 	)
 	(junction
 		(at 180.34 68.58)
@@ -1150,6 +1144,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1d1ec9f-6b04-45dc-8564-2022e89b3c83")
+	)
+	(junction
+		(at 149.86 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e5fd0a27-e49a-49f2-b704-044d694cfbfd")
 	)
 	(junction
 		(at 180.34 78.74)
@@ -1574,7 +1574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 133.35 81.28 0)
 			(effects
 				(font
@@ -1642,7 +1642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 133.35 78.74 0)
 			(effects
 				(font
@@ -1710,7 +1710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 175.26 68.58 0)
 			(effects
 				(font
@@ -1851,6 +1851,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SAM-M10Q-00B"
+			(at 156.21 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -2017,7 +2026,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 185.42 78.74 0)
 			(effects
 				(font
@@ -2124,73 +2133,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 149.86 125.73 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "413dc37d-e19c-461c-bc59-eead37dc512d")
-		(property "Reference" "C34"
-			(at 154.686 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1u"
-			(at 153.924 126.746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.8948 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 149.86 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e09ae018-20d8-4c6a-909c-bba6b59e4963")
-		)
-		(pin "2"
-			(uuid "3c7bdcf0-b673-4e43-acce-d145a3788329")
-		)
-		(instances
-			(project ""
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 179.07 73.66 270)
 		(mirror x)
@@ -2219,7 +2161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 179.07 68.58 0)
 			(effects
 				(font
@@ -2287,7 +2229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 129.54 87.63 0)
 			(effects
 				(font
@@ -2355,7 +2297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 133.35 85.09 0)
 			(effects
 				(font
@@ -2389,6 +2331,84 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
 					(reference "TP41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 149.86 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93c60250-cd24-4ca9-97fb-1083b194816d")
+		(property "Reference" "C34"
+			(at 150.368 123.444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 150.368 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 150.8252 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 149.86 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 149.86 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64ad8f19-cc82-463b-819f-26b9f915b1da")
+		)
+		(pin "1"
+			(uuid "7f5516ea-fbbf-4f52-867e-1f0c3fb73d6c")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -2488,7 +2508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 133.35 73.66 0)
 			(effects
 				(font
@@ -2522,6 +2542,84 @@
 			(project ""
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
 					(reference "TP35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 160.02 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da72cd83-46b0-4442-92da-19eb58498d4b")
+		(property "Reference" "C35"
+			(at 160.528 123.444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 160.528 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 160.9852 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 160.02 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KP5NNNC"
+			(at 160.02 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "55bc2644-85b3-4723-9c93-864b4eff34b8")
+		)
+		(pin "1"
+			(uuid "41057c6c-1083-4c5c-9c78-6e77ef978f90")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -2588,73 +2686,6 @@
 			(project ""
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
 					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 160.02 125.73 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fc79ecd4-ced1-42d2-934d-979a7c84a384")
-		(property "Reference" "C35"
-			(at 164.846 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1u"
-			(at 164.084 126.746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 159.0548 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 160.02 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48fe5aee-fec5-4b95-8f28-2333b34a237f")
-		)
-		(pin "2"
-			(uuid "9160ac4a-1149-4a35-a86b-398751545eaf")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/3fbbcbd0-9713-48e9-bad3-cec99a2b6181"
-					(reference "C35")
 					(unit 1)
 				)
 			)

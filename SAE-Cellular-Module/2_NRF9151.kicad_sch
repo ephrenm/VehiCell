@@ -9262,7 +9262,7 @@
 	)
 	(rectangle
 		(start 130.81 120.65)
-		(end 208.28 152.4)
+		(end 210.82 152.4)
 		(stroke
 			(width 0)
 			(type dash)
@@ -9400,6 +9400,16 @@
 			)
 		)
 		(uuid "affbb0d4-8fc2-4588-a005-58fb37f2e3e0")
+	)
+	(text "RECHECK ALL CAPACITOR PACKAGE SIZES\n\n"
+		(exclude_from_sim no)
+		(at 167.894 -14.478 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cfd9dbdf-d348-4b3b-9a02-13f415e29676")
 	)
 	(text "6/2/2025\n"
 		(exclude_from_sim no)
@@ -9689,12 +9699,6 @@
 		(uuid "b710caf5-4a05-4ed1-b25c-ea5768b9afcc")
 	)
 	(junction
-		(at 109.22 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9edadeb-ea9a-446b-bb21-7579e58217cf")
-	)
-	(junction
 		(at 162.56 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9729,6 +9733,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d98740bc-9f3b-429c-8fed-ef73dd910b4e")
+	)
+	(junction
+		(at 109.22 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9dbed65-252b-47bc-b5e9-791758385b1d")
 	)
 	(junction
 		(at 228.6 138.43)
@@ -11654,73 +11664,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 250.19 86.36 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0d427582-1540-4f9d-bb56-27eea796615f")
-		(property "Reference" "R4"
-			(at 249.936 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1k"
-			(at 249.936 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 250.19 88.138 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 250.19 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 250.19 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "67eb3c08-5ce5-4565-9aa9-a63615650dd6")
-		)
-		(pin "1"
-			(uuid "c48f1214-742f-4c62-8600-e0892c697a59")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 160.02 146.05 0)
 		(unit 1)
@@ -11813,7 +11756,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 104.14 31.75 0)
 			(effects
 				(font
@@ -11853,44 +11796,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 224.79 97.79 0)
+		(lib_id "Device:R")
+		(at 250.19 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a291b60-7b82-4ff9-9a06-845eb1a03822")
-		(property "Reference" "Q3"
-			(at 231.14 96.5199 0)
+		(uuid "1984ac1e-27de-4902-b1fd-0175631eaf47")
+		(property "Reference" "R4"
+			(at 250.19 81.026 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 231.14 99.0599 0)
+		(property "Value" "330"
+			(at 250.19 83.566 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 229.87 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 224.79 110.49 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 250.19 88.138 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11898,8 +11829,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 224.79 97.79 0)
+		(property "Datasheet" "~"
+			(at 250.19 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11907,8 +11838,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NMOS"
-			(at 224.79 114.935 0)
+		(property "Description" "Resistor"
+			(at 250.19 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11916,17 +11847,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" "VDMOS"
-			(at 224.79 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 224.79 113.03 0)
+		(property "MPN" "ERJ-2RKF3300X"
+			(at 250.19 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11935,18 +11857,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "89f9b71e-dc5f-485a-8f7d-7a73d2176706")
-		)
-		(pin "3"
-			(uuid "750fe5dd-1798-48f4-8de1-b03bdc0a18e1")
+			(uuid "a3031909-750a-4684-9c58-d8224e58bc82")
 		)
 		(pin "2"
-			(uuid "3c71aed0-cdf8-4d92-b4ee-543cbb9d570d")
+			(uuid "3eabe541-80b5-4769-bde4-632b1c1c564a")
 		)
 		(instances
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "Q3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -11978,7 +11897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 38.1 69.85 0)
 			(effects
 				(font
@@ -12107,7 +12026,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 222.25 76.708 90)
 			(effects
 				(font
@@ -12127,6 +12046,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 222.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF1003X"
+			(at 222.25 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12176,7 +12104,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "NRF9151-LACA-R:XCVR_NRF9151-LACA-R"
+		(property "Footprint" "NRF9151_LACA_R:XCVR_NRF9151-LACA-R"
 			(at 87.63 173.228 0)
 			(effects
 				(font
@@ -12633,6 +12561,82 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 144.78 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2c13b8ed-f396-42c9-96ec-bdf80bea6d04")
+		(property "Reference" "R7"
+			(at 144.78 124.206 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 144.78 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 144.78 131.318 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 144.78 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF3300X"
+			(at 144.78 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40eb53ca-7847-43fa-aa8e-2384f2d8a095")
+		)
+		(pin "2"
+			(uuid "c414bf91-527d-49b7-9fce-0f6d65ed02ac")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 25.4 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12658,7 +12662,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 23.622 128.27 90)
 			(effects
 				(font
@@ -12685,6 +12689,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0402FR-071ML"
+			(at 25.4 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f4744454-d8de-498e-8b5e-5affa6dee54b")
 		)
@@ -12695,106 +12708,6 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
 					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 195.58 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dfb26bc-a1c4-40c7-8039-7e27374be744")
-		(property "Reference" "Q5"
-			(at 201.93 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 201.93 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 195.58 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 195.58 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 195.58 158.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 195.58 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 195.58 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c4357ebd-7b5a-4b66-9dcf-e76de405b66e")
-		)
-		(pin "3"
-			(uuid "6b92d334-b194-4cb8-abe3-9bc92e489d1e")
-		)
-		(pin "2"
-			(uuid "3b605f32-4dac-4c7b-b641-3a287698741a")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -13128,7 +13041,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 48.26 92.71 0)
 			(effects
 				(font
@@ -13233,6 +13146,158 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 193.04 129.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4892b628-dba3-44b1-be35-9d47d587b9ea")
+		(property "Reference" "D2"
+			(at 194.056 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ORNG"
+			(at 194.056 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 193.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 193.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "150060AS75000"
+			(at 193.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffb772cf-f24e-40cb-b2d9-7697323f796e")
+		)
+		(pin "2"
+			(uuid "d76c6f31-f7ee-4bec-9d67-225e8e6c9f1c")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 182.88 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "50354e34-02fe-479c-865c-cff5105d1e51")
+		(property "Reference" "R8"
+			(at 182.88 124.206 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 182.88 126.746 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 182.88 131.318 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 182.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF3300X"
+			(at 182.88 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d79396ef-4513-486c-bea9-74e0a71e297b")
+		)
+		(pin "2"
+			(uuid "a6e5466c-3d59-40bd-9eec-0c836b20d17a")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 48.26 107.95 90)
 		(unit 1)
@@ -13258,7 +13323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 48.26 102.87 0)
 			(effects
 				(font
@@ -13323,7 +13388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 38.1 67.31 0)
 			(effects
 				(font
@@ -13587,7 +13652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 38.1 62.23 0)
 			(effects
 				(font
@@ -13692,6 +13757,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 111.76 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6227183a-f0c0-4dbb-9fff-508fe7067883")
+		(property "Reference" "C7"
+			(at 114.808 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 114.808 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 112.7252 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 111.76 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL10A475KP8NNNC"
+			(at 111.76 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "17e5a881-d4e2-421c-925d-f129a903181b")
+		)
+		(pin "1"
+			(uuid "cd5ec58a-70e8-4cb4-8066-41a4c511bcce")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 48.26 110.49 90)
 		(unit 1)
@@ -13717,7 +13860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 48.26 105.41 0)
 			(effects
 				(font
@@ -13978,152 +14121,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 227.33 69.85 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6db162c2-c888-41ac-b240-3997fee9ec93")
-		(property "Reference" "R2"
-			(at 229.87 68.5799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 229.87 71.1199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 229.108 69.85 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 227.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 227.33 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ee891df5-b1e8-4cb3-8d87-db4dbd92bc3a")
-		)
-		(pin "1"
-			(uuid "12042253-df9a-4de1-b1fe-af5d1545b326")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 193.04 129.54 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "74c7a4ba-ffc1-4698-8075-e72e7d5500b7")
-		(property "Reference" "D2"
-			(at 194.056 123.444 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ORNG"
-			(at 194.056 125.984 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 193.04 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 193.04 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 193.04 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8e6861a7-02e9-424b-9fbd-53ece9667ea3")
-		)
-		(pin "2"
-			(uuid "5b67d2f3-bda2-425d-85bd-4338a42829d4")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 198.12 146.05 0)
 		(unit 1)
@@ -14191,6 +14188,7 @@
 	(symbol
 		(lib_id "MM8130-2600:MM8130-2600")
 		(at 165.1 25.4 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14213,7 +14211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MM8130-2600:MURATA_MM8130-2600RA2"
+		(property "Footprint" "MM8130_2600RA2:MURATA_MM8130-2600RA2"
 			(at 165.1 25.4 0)
 			(effects
 				(font
@@ -14232,6 +14230,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 165.1 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MM8130-2600RA2"
 			(at 165.1 25.4 0)
 			(effects
 				(font
@@ -14363,7 +14370,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "~"
 			(at 195.58 33.02 0)
 			(effects
 				(font
@@ -14417,31 +14424,33 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 182.88 129.54 90)
+		(at 227.33 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7f87615b-4cbe-47c9-b2a9-8a8f6e3b8dea")
-		(property "Reference" "R8"
-			(at 182.88 124.206 90)
+		(uuid "8157cdb9-ec50-41af-b4bb-88c7ed5ff0e7")
+		(property "Reference" "R2"
+			(at 228.854 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "330"
-			(at 182.88 126.746 90)
+		(property "Value" "13.3k"
+			(at 228.854 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 182.88 131.318 90)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 225.552 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14450,7 +14459,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 182.88 129.54 0)
+			(at 227.33 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14459,7 +14468,16 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 182.88 129.54 0)
+			(at 227.33 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF1332X "
+			(at 227.33 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14468,15 +14486,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "232a65d7-333b-4372-b110-d892fc67a53c")
+			(uuid "4e1b6c09-daec-4c00-b081-7cdc561bb25a")
 		)
 		(pin "2"
-			(uuid "185b0e56-b6f1-46c6-b5a4-8aae8cba5892")
+			(uuid "a23ec1e1-4a13-4b52-9fc2-4207e5b92780")
 		)
 		(instances
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "R8")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -14548,6 +14566,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 157.48 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8af9ede8-f87c-4e26-acea-2e6ad083eae0")
+		(property "Reference" "Q4"
+			(at 162.306 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2005K"
+			(at 162.306 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 162.56 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 157.48 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 157.48 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMN2005K-7"
+			(at 157.48 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5523b63-dbea-4e19-bb7e-7e7b269c3d5a")
+		)
+		(pin "3"
+			(uuid "cf352735-6cda-43ed-9296-68b1bf8044fc")
+		)
+		(pin "2"
+			(uuid "f7d3f7a3-a92f-4461-8335-ff5cd8c4425c")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
 		(at 236.22 138.43 0)
 		(unit 1)
@@ -14573,7 +14672,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical"
 			(at 236.22 138.43 0)
 			(effects
 				(font
@@ -14592,6 +14691,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 236.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRPC005DFAN-RC"
 			(at 236.22 138.43 0)
 			(effects
 				(font
@@ -14664,7 +14772,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 154.94 129.54 0)
 			(effects
 				(font
@@ -14691,7 +14799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "MPN" "150060AS75000"
 			(at 154.94 129.54 0)
 			(effects
 				(font
@@ -14741,7 +14849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 48.26 95.25 0)
 			(effects
 				(font
@@ -14781,73 +14889,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 144.78 129.54 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "93c332de-0a1d-462f-b360-4a9a5ed2811d")
-		(property "Reference" "R7"
-			(at 144.78 124.206 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 144.78 126.746 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 131.318 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 144.78 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 144.78 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e9df92d2-3e34-4d47-a7d5-b3cdaf53d819")
-		)
-		(pin "2"
-			(uuid "6eb7aa66-554b-4339-b5a7-41ece34af6bc")
-		)
-		(instances
-			(project ""
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "NRF9151-LACA-R_1")
 		(lib_id "NRF9151-LACA-R:NRF9151-LACA-R")
 		(at 132.08 33.02 0)
@@ -14873,7 +14914,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NRF9151-LACA-R:XCVR_NRF9151-LACA-R"
+		(property "Footprint" "NRF9151_LACA_R:XCVR_NRF9151-LACA-R"
 			(at 133.858 54.61 0)
 			(effects
 				(font
@@ -15461,10 +15502,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a2166d24-db3b-44cc-9166-96810d4df352")
 		(property "Reference" "Q2"
-			(at 246.38 90.1699 0)
+			(at 244.856 90.424 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15472,8 +15512,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NMOS"
-			(at 246.38 92.7099 0)
+		(property "Value" "DMN2005K"
+			(at 244.856 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15481,7 +15521,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 245.11 88.9 0)
 			(effects
 				(font
@@ -15508,26 +15548,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NMOS"
-			(at 240.03 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 240.03 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 240.03 106.68 0)
+		(property "MPN" "DMN2005K-7"
+			(at 240.03 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15632,84 +15654,6 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
 					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 111.76 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a7515e7e-09d7-4931-b98c-18bf51fb09a7")
-		(property "Reference" "C7"
-			(at 114.808 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7u"
-			(at 114.808 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 112.7252 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 111.76 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL21A475KPFNNNE"
-			(at 111.76 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "05c180f4-1f59-4623-8c90-bd98b4bf3508")
-		)
-		(pin "1"
-			(uuid "3aa90bc3-b2de-47b5-b65f-aded37141a4c")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -15871,7 +15815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 115.57 0)
 			(effects
 				(font
@@ -15989,6 +15933,84 @@
 			(project ""
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 109.22 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bbcbcff1-6017-4e70-bbfd-86dfdde1c18c")
+		(property "Reference" "R1"
+			(at 110.744 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "13.3k"
+			(at 110.744 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 107.442 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ERJ-2RKF1332X "
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d8d2643-e7af-46c0-bd08-50f9c9dfb9fc")
+		)
+		(pin "2"
+			(uuid "c14d2bc6-baac-4804-91cb-1ff9fa1a0aff")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -16325,6 +16347,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SR4L002"
+			(at 234.95 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "6bbe5e28-b2af-4da7-ad70-b45b5f167e31")
 		)
@@ -16400,6 +16431,87 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 195.58 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca053128-e939-47bb-8efb-6a590a3c0082")
+		(property "Reference" "Q5"
+			(at 200.406 139.954 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2005K"
+			(at 200.406 142.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 200.66 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 195.58 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMN2005K-7"
+			(at 195.58 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ee69335-fb5c-495c-a7f1-86b40f3b9c1f")
+		)
+		(pin "3"
+			(uuid "e4bd8fb2-d75a-462f-ac8f-2c9345a7bd35")
+		)
+		(pin "2"
+			(uuid "4f6f49c8-ab97-48a6-b1f7-73d786b2a75f")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "Q5")
 					(unit 1)
 				)
 			)
@@ -16497,7 +16609,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.1352 45.72 0)
 			(effects
 				(font
@@ -16524,7 +16636,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21A475KPFNNNE"
+		(property "MPN" "CL10A475KP8NNNC"
 			(at 90.17 41.91 0)
 			(effects
 				(font
@@ -16576,7 +16688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 114.3 24.13 0)
 			(effects
 				(font
@@ -16849,7 +16961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 48.26 90.17 0)
 			(effects
 				(font
@@ -16889,106 +17001,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:NMOS")
-		(at 157.48 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d497b473-14fe-4481-9344-7dd95e200320")
-		(property "Reference" "Q4"
-			(at 163.83 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NMOS"
-			(at 163.83 142.2399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 162.56 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
-			(at 157.48 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/source/gate"
-			(at 157.48 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NMOS"
-			(at 157.48 158.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 157.48 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 157.48 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7d40948d-01d4-49c4-9965-5386054ec8b2")
-		)
-		(pin "3"
-			(uuid "f60c4411-3b47-40dd-954e-d845b406132e")
-		)
-		(pin "2"
-			(uuid "324b7d60-41d9-410c-8233-2f8b73bdd621")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "NRF9151-LACA-R_2")
 		(lib_id "NRF9151-LACA-R:NRF9151-LACA-R")
 		(at 73.66 110.49 0)
@@ -17014,7 +17026,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NRF9151-LACA-R:XCVR_NRF9151-LACA-R"
+		(property "Footprint" "NRF9151_LACA_R:XCVR_NRF9151-LACA-R"
 			(at 75.438 132.08 0)
 			(effects
 				(font
@@ -17407,10 +17419,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "de66a785-9561-4609-ba02-af77111942d5")
 		(property "Reference" "Q1"
-			(at 231.14 82.5499 0)
+			(at 229.87 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17418,8 +17429,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PMOS"
-			(at 231.14 85.0899 0)
+		(property "Value" "DMP2004K"
+			(at 229.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17427,7 +17438,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 229.87 81.28 0)
 			(effects
 				(font
@@ -17454,26 +17465,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "PMOS"
-			(at 224.79 100.965 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "VDMOS"
-			(at 224.79 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=D 2=G 3=S"
-			(at 224.79 99.06 0)
+		(property "MPN" "DMP2004K-7"
+			(at 224.79 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17494,75 +17487,6 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 109.22 27.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e356d325-407b-4f13-b190-5432a8fd3d63")
-		(property "Reference" "R1"
-			(at 110.49 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "13.3k"
-			(at 110.49 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.442 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 109.22 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b803f620-d315-4b9d-9bd2-e98ba2b73854")
-		)
-		(pin "2"
-			(uuid "d5904274-94c3-43d4-87ff-28db025ce3c1")
-		)
-		(instances
-			(project "SAE Cellular Module"
-				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -17671,7 +17595,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 28.702 128.27 90)
 			(effects
 				(font
@@ -17698,6 +17622,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "RC0402FR-071ML"
+			(at 30.48 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e4d4c9a9-4834-4712-bcd2-e43f104c16c1")
 		)
@@ -17708,6 +17641,87 @@
 			(project "SAE Cellular Module"
 				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NMOS")
+		(at 224.79 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "eb34bc57-c2cc-4f84-b761-3f6b5f551e77")
+		(property "Reference" "Q3"
+			(at 229.616 96.774 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN2005K"
+			(at 229.616 99.314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(at 229.87 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
+			(at 224.79 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
+			(at 224.79 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "DMN2005K-7"
+			(at 224.79 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2555c5c9-2ceb-432b-8a90-a8e630863e3e")
+		)
+		(pin "3"
+			(uuid "570fe7ac-1fb9-421b-aa8f-8e4da5a6eb73")
+		)
+		(pin "2"
+			(uuid "28c2a67c-6e7c-488c-9073-a083c9bf5982")
+		)
+		(instances
+			(project "SAE Cellular Module"
+				(path "/a08fab55-11db-44fb-b9aa-270892bf89c0/e7b7acd8-c0d2-4c3e-ae55-0ccb171416e6"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -17882,7 +17896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 48.26 100.33 0)
 			(effects
 				(font
@@ -17947,7 +17961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 24.13 110.49 0)
 			(effects
 				(font
