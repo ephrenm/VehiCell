@@ -2,4 +2,6 @@
 
 **Current Task:** Routing
 
-Check out the current revision schematic or come back later for more!
+Current WIP layout:
+
+![Image](https://github.com/ephrenm/VehiCell/blob/main/SAE-Cellular-Module/Misc/image.png )
